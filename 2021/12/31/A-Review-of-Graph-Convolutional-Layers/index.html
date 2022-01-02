@@ -85,7 +85,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">196</span>
+            <span class="post-count">200</span>
         </span>
     </span>
 
@@ -109,16 +109,16 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="ChebConv"><a href="#ChebConv" class="headerlink" title="ChebConv"></a>ChebConv</h1><p>$$H^{l+1}=∑_{k=1}^{K}{Z^{(k)}\cdot θ^{(k)}}$$</p>
+  <h1 id="ChebConv"><a href="#ChebConv" class="headerlink" title="ChebConv"></a>ChebConv</h1><p>$$H^{l+1}=\sum_{k=1}^{K}{Z^{(k)}\cdot \theta^{(k)}}$$</p>
 <h1 id="GCNConv"><a href="#GCNConv" class="headerlink" title="GCNConv"></a>GCNConv</h1><p>$$<br>H^{l+1} = \sigma(\tilde{D}^{-\frac{1}{2}}\tilde{A}\tilde{D}^{-\frac{1}{2}}H^{l}W^{l})<br>$$</p>
 <h2 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation:"></a>Explanation:</h2><p>Adding node features from neighboring nodes into central nodes</p>
 <h1 id="SAGEConv"><a href="#SAGEConv" class="headerlink" title="SAGEConv"></a>SAGEConv</h1><p>Perform node sampling in every neighborhood to procude $f(\mathcal{N}(i))$, where $f(\cdot)$ is a sampling function</p>
-<h1 id="GraphConv"><a href="#GraphConv" class="headerlink" title="GraphConv"></a>GraphConv</h1><p>Paper: <a target="_blank" rel="noopener" href="https://arxiv.org/abs/1810.02244">arxiv</a><br>$$x_i^′=θ_1 x_i+θ_2 ∑_{j∈\mathcal{N}(i)}{e_{j,i}\cdot x_j}$$<br>where $e_{j,i}$   denotes the edge weight from source node $j$ to target node $i$ (default: 1)</p>
+<h1 id="GraphConv"><a href="#GraphConv" class="headerlink" title="GraphConv"></a>GraphConv</h1><p>Paper: <a target="_blank" rel="noopener" href="https://arxiv.org/abs/1810.02244">arxiv</a><br>$$x_i^′=\theta_1 x_i+\theta_2 \sum_{j\in\mathcal{N}(i)}{e_{j,i}\cdot x_j}$$<br>where $e_{j,i}$   denotes the edge weight from source node $j$ to target node $i$ (default: 1)</p>
 <h2 id="Explanation-1"><a href="#Explanation-1" class="headerlink" title="Explanation:"></a>Explanation:</h2><p><code>GraphConv</code> multiplies features in neighboring nodes by their corresponding edge weights</p>
 <h1 id="EdgeConv"><a href="#EdgeConv" class="headerlink" title="EdgeConv"></a>EdgeConv</h1><p>Paper: <a target="_blank" rel="noopener" href="https://arxiv.org/abs/1801.07829">arxiv</a></p>
-<p>$$x_i′=∑_{j∈\mathcal{N}(i)}{h_θ (x_i||(x_j−x_i))}$$</p>
+<p>$$x_i′=\sum_{j\in\mathcal{N}(i)}{h_\theta (x_i||(x_j−x_i))}$$</p>
 <h2 id="Explanation-2"><a href="#Explanation-2" class="headerlink" title="Explanation:"></a>Explanation:</h2><p>Adding feature difference $x_j−x_i$  from neighboring nodes into central nodes $x_i$.</p>
-<h1 id="GATConv"><a href="#GATConv" class="headerlink" title="GATConv"></a>GATConv</h1><p>$$x_i^′=\alpha_{i,j}x_i+ ∑_{j∈\mathcal{N}(i)}{\alpha_{i,j}\cdot \theta x_j}$$<br>where $α_{i.j}$  is the attention coefficient</p>
+<h1 id="GATConv"><a href="#GATConv" class="headerlink" title="GATConv"></a>GATConv</h1><p>$$x_i^′=\alpha_{i,j}x_i+ \sum_{j\in\mathcal{N}(i)}{\alpha_{i,j}\cdot \theta x_j}$$<br>where $α_{i.j}$  is the attention coefficient</p>
 <h2 id="Notes"><a href="#Notes" class="headerlink" title="Notes:"></a>Notes:</h2><p>Similar to <code>GraphConv</code>. The difference is in <code>GraphConv</code>, edge weight is predefined. In <code>GATConv</code>, edge weights are replaced by attention coefficients</p>
 <h1 id="GATv2Conv"><a href="#GATv2Conv" class="headerlink" title="GATv2Conv"></a>GATv2Conv</h1><p>Different to GATConv in terms of the computation of attention coefficients $α_{i.j}$.</p>
 <h1 id="TransformerConv"><a href="#TransformerConv" class="headerlink" title="TransformerConv"></a>TransformerConv</h1> 
@@ -198,10 +198,19 @@
    
   <nav class="article-nav">
     
+      <a href="/2022/01/02/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B9%A6%E6%9E%81/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            第一次蹦极跳
+          
+        </div>
+      </a>
     
-      <a href="/2021/12/30/A-Study-on-GCN/" class="article-nav-link">
+    
+      <a href="/2021/12/30/hello-world/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">A Study on GCN</div>
+        <div class="article-nav-title">Hello World</div>
       </a>
     
   </nav>
@@ -265,7 +274,7 @@
     <ul>
       <li>
         Copyrights &copy;
-        2020-2021
+        2020-2022
         <i class="ri-heart-fill heart_icon"></i> Shannon, 洪学农
       </li>
     </ul>
