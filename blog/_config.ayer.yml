@@ -80,7 +80,7 @@ word_count:
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 0
 # 打赏wording
 reward_wording: "请我喝杯咖啡吧~"
 # 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
@@ -108,7 +108,7 @@ canvas_bg: 0
 
 # 自定义鼠标样式，直接替换/images/mouse.cur文件
 mouse:
-  enable: false
+  enable: true
   path: /images/mouse.cur
 
 # 鼠标点击效果：0-关闭，1-爱心，2-爆炸烟花，3-粒子烟花
@@ -122,12 +122,12 @@ layout:
 # GitHub Ribbons-封面右上角的forkme，换样式直接在source/images目录下替换forkme图片
 github:
   # (关闭请设置为false)
-  enable: true
+  enable: false
   url: https://github.com/Shen-Yu/hexo-theme-ayer
 
 # 网易云音乐插件
 music:
-  enable: false
+  enable: true
   # 播放器尺寸类型(1：小尺寸、2：大尺寸)
   type: 1
   id: 22707008 # 网易云分享的音乐ID(更换音乐请更改此配置项)
@@ -148,12 +148,12 @@ google_analytics: ""
 baidu_analytics: ""
 
 # Mathjax数学公式
-mathjax: false
+mathjax: true
 
 # Katex数学公式(allpost设置为false时只有头部设置math:true的文章才开启)
 # 需要更换hexo渲染器，npm un hexo-renderer-marked -S && npm i hexo-renderer-markdown-it-katex -S
 katex:
-  enable: false # true
+  enable: true # true
   allpost: true
   copy_tex: false
 
@@ -164,7 +164,7 @@ mermaid:
   theme: forest
 
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2015
+since: 2020
 
 # ICP备案信息尾部显示
 icp:
@@ -180,23 +180,23 @@ gongan:
 
 # 友情链接
 friends_link:
-  Ayer主题: #网站名称
-    #网站地址
-    url: https://github.com/Shen-Yu/hexo-theme-ayer
-    #网站图片(可忽略不写)
-    img: /images/ayer.png
-  GitHub:
-    url: https://github.com/Shen-Yu
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/github.png
-  码云:
-    url: https://gitee.com/shen-yu
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/gitee.png
-  Hexo官网:
-    url: https://hexo.io
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/hexo.png
-  Hexo图表插件:
-    url: https://github.com/Shen-Yu/hexo-tag-chart
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/hexo-tag-chart.png
+  # Ayer主题: #网站名称
+  #   #网站地址
+  #   url: https://github.com/Shen-Yu/hexo-theme-ayer
+  #   #网站图片(可忽略不写)
+  #   img: /images/ayer.png
+  # GitHub:
+  #   url: https://github.com/Shen-Yu
+  #   img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/github.png
+  # 码云:
+  #   url: https://gitee.com/shen-yu
+  #   img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/gitee.png
+  # Hexo官网:
+  #   url: https://hexo.io
+  #   img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/hexo.png
+  # Hexo图表插件:
+  #   url: https://github.com/Shen-Yu/hexo-tag-chart
+  #   img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/hexo-tag-chart.png
 
 # 评论：1、Valine(推荐)；2、Gitalk；3、Twikoo; 4.MiniValine
 
@@ -204,8 +204,8 @@ friends_link:
 # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
 leancloud:
   enable: true
-  app_id: 5fAYlffC5aXpFjs42ytIry67-MdYXbMMI
-  app_key: EiypBRqv53LlaYLsSFRa8bEe
+  app_id: 8r7Feo72K8qifqgqSuEQNUqN-9Nh9j0Va
+  app_key: qz7ya1KMdxcribby0idHzmxu
 # Valine配置
 valine:
   enable: true # 是否启用
