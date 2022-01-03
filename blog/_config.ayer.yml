@@ -1,13 +1,11 @@
 # 侧边栏菜单
 menu:
   主页: /
-  归档: /archives
-  分类: /categories
   标签: /tags
-  旅行: /tags/旅行/
-  摄影: /
-  友链: /friends
-  关于我: /2019/about
+  分类: /categories
+  随记: /tags/旅行/
+  归档: /archives
+  关于我: /about
 
 # 站点次标题和打字动效
 # https://github.com/mattboldt/typed.js
